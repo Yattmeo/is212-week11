@@ -9,6 +9,7 @@ class Product:
         discounted_price = round(self.price - (self.price * self.discount),1)
         print(f"Discounted price for {self.name} ({self.__class__.__name__}): {discounted_price}")
         return discounted_price
+    
 
     def calculate_tax(self):
         tax = self.price * self.tax_rate
